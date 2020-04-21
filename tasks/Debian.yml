@@ -1,1 +1,36 @@
 ---
+- name: version
+  command: bfg --version
+  register: bfg_installed_version
+  changed_when: false
+  failed_when: false
+
+- block:
+    - name: download
+      get_url:
+        url: "{{ bfg_url }}"
+        dest: /tmp
+
+    - block:
+        - name: executable bin for every user
+          copy:
+            src: "/tmp/bfg-{{ bfg_version }}.jar"
+            dest: /usr/local/bin/bfg.jar
+            remote_src: true
+            owner: root
+            group: root
+            mode: '0755'
+
+        - name: alias
+          lineinfile:
+            path=/etc/bash.bashrc
+            line="alias bfg='java -jar /usr/local/bin/bfg.jar'"
+            owner=foo
+            regexp='^alias bfg='java -jar /usr/local/bin/bfg.jar'$'
+            state=present
+            insertafter=EOF
+            create=True
+      become: true
+  when: >
+    bfg_installed_version.stdout is not defined
+    or bfg_version not in bfg_installed_version.stdout
