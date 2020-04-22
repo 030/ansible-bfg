@@ -12,7 +12,7 @@
 ![Last commit](https://img.shields.io/github/last-commit/030/ansible-bfg.svg)
 ![Release date](https://img.shields.io/github/release-date/030/ansible-bfg.svg)
 ![Latest Production Release Version](https://img.shields.io/github/release/030/ansible-bfg.svg)
-[![Ansible Galaxy](https://img.shields.io/ansible/role/0.svg)](https://galaxy.ansible.com/030/ansible-bfg)
-[![Ansible Role](https://img.shields.io/ansible/role/d/0)](https://galaxy.ansible.com/030/ansible-bfg)
+[![Ansible Galaxy](https://img.shields.io/ansible/role/48126.svg)](https://galaxy.ansible.com/030/ansible-bfg)
+[![Ansible Role](https://img.shields.io/ansible/role/d/48126)](https://galaxy.ansible.com/030/ansible-bfg)
 
 Installs [bfg](https://github.com/rtyley/bfg-repo-cleaner).
