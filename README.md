@@ -15,4 +15,4 @@
 [![Ansible Galaxy](https://img.shields.io/ansible/role/0.svg)](https://galaxy.ansible.com/030/ansible-bfg)
 [![Ansible Role](https://img.shields.io/ansible/role/d/0)](https://galaxy.ansible.com/030/ansible-bfg)
 
-Installs [ansible-bfg](https://github.com/rtyley/bfg-repo-cleaner).
+Installs [bfg](https://github.com/rtyley/bfg-repo-cleaner).
