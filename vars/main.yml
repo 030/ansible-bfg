@@ -1,2 +1,2 @@
 ---
-bfg_url: https://repo1.maven.org/maven2/com/madgag/bfg/{{ bfg_version }}/bfg-{{ bfg_version }}.jar
+bfg_url: https://repo1.maven.org/maven2/com/madgag/bfg/{{ bfg_version }}/bfg-{{ bfg_version }}.jar  # yamllint disable-line rule:line-length
