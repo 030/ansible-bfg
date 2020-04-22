@@ -25,7 +25,7 @@
           lineinfile:
             path: /etc/bash.bashrc
             line: "alias bfg='java -jar /usr/local/bin/bfg.jar'"
-            regexp: '^alias bfg='java -jar /usr/local/bin/bfg.jar'$'
+            regexp: "^alias bfg='java -jar /usr/local/bin/bfg.jar'$"
             insertafter: EOF
             create: true
       become: true
