@@ -23,13 +23,11 @@
 
         - name: alias
           lineinfile:
-            path=/etc/bash.bashrc
-            line="alias bfg='java -jar /usr/local/bin/bfg.jar'"
-            owner=foo
-            regexp='^alias bfg='java -jar /usr/local/bin/bfg.jar'$'
-            state=present
-            insertafter=EOF
-            create=True
+            path: /etc/bash.bashrc
+            line: "alias bfg='java -jar /usr/local/bin/bfg.jar'"
+            regexp: '^alias bfg='java -jar /usr/local/bin/bfg.jar'$'
+            insertafter: EOF
+            create: true
       become: true
   when: >
     bfg_installed_version.stdout is not defined
