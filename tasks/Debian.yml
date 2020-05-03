@@ -1,6 +1,6 @@
 ---
 - name: version
-  command: bfg --version
+  command: /bin/bash -i -c "bfg --version"
   register: bfg_installed_version
   changed_when: false
   failed_when: false
